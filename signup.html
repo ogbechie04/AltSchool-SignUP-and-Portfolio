@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALT School Application Form</title>
+
+    <style>
+        html{
+            background-color: #f1f1f1;
+        }
+        #application-form{
+            background-color: white;
+            padding: 10px;
+        }
+
+        input{
+            width: 5cm;
+            padding: 15px 25px 15px 10px;
+            margin: 5px 25px 15px 0px ;
+            border: .5px solid grey;
+            border-radius: 5px;
+        }
+
+        /* ::placeholder {
+            font-weight: 100;
+            align-self:;
+            color: aquamarine; */
+
+            button{
+                background-color: rgb(106, 111, 245);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 220px;
+                text-align: center;
+                font-size: 12px;
+            }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Alt___ <br />School</h2>
+    </header>
+
+    <main>
+      <section id="application-form">
+        <h2 style="margin-bottom: 10px">Application Form</h2>
+        <h4 style="margin-top: 0; font-weight: normal">Fill in your details</h4>
+
+        <form action="">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="first-name"
+                    >First Name<sup>*</sup><br />
+                    <input
+                      type="text"
+                      name="first-name"
+                      placeholder="Enter first name"
+                      required
+                      autocomplete="name"
+                      class="input"
+                      id="first-name"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label for="last-name"
+                    >Last Name<sup>*</sup><br />
+                    <input
+                      type="text"
+                      name="last-name"
+                      placeholder="Enter last name"
+                      required
+                      class="input"
+                      id="last-name"
+                    />
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="gender"
+                    >Gender<sup>*</sup><br />
+                    <input
+                      type="text"
+                      name="gender"
+                      list="genderl"
+                      placeholder="Select gender"
+                      required
+                      class="input"
+                      id="gender"
+                    />
+                    <datalist id="genderl">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </datalist>
+                  </label>
+                </td>
+                <td>
+                  <label for="dob"
+                    >Date of Birth<sup>*</sup><br />
+                    <input type="date" name="date-of-birth" id="dob" required class="input" />
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email"
+                    >Email Address<sup>*</sup><br />
+                    <input
+                    id="email"
+                      type="email"
+                      name="email-add"
+                      placeholder="Enter email address"
+                      required
+                      autocomplete="email"
+                      class="input"
+                      itemid="email"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label for="education"
+                    >Education Level<sup>*</sup><br />
+                    <input
+                      type="text"
+                      list="education-level"
+                      name="education-level"
+                      placeholder="Select level of education"
+                      required
+                      class="input"
+                      id="education"
+                    />
+                    <datalist id="education-level">
+                      <option selected disabled hidden>
+                        Select level of education
+                      </option>
+                      <option>Bsc</option>
+                      <option>Msc</option>
+                      <option>Diploma</option>
+                      <option>Doctorate (PhD)</option>
+                      <option>High School / Secondary School</option>
+                      <option>Under Graduate</option>
+                      <option>Junior / Middle School</option>
+                      <option>Post Graduate</option>
+                    </datalist>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="country">Country<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    list="country"
+                    name="country"
+                    placeholder="Select your country"
+                    required
+                    class="input"
+                    id="country-list"
+                  />
+                  <datalist id="country">
+                    <option>Afghanistan</option>
+                    <option>Albania</option>
+                    <option>Algeria</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Antigua</option>
+                    <option>Argentina</option>
+                    <option>Armenia</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Azerbaijan</option>
+                    <option>Bahamas</option>
+                    <option>Bahrain</option>
+                    <option>Bangladesh</option>
+                    <option>Barbados</option>
+                    <option>Belgium</option>
+                    <option>Belize</option>
+                    <option>Benin</option>
+                    <option>Bhutan</option>
+                    <option>Bolivia</option>
+                    <option>Bosnia Herzegovina</option>
+                    <option>Botswana</option>
+                    <option>Brazil</option>
+                    <option>Brunei</option>
+                    <option>Bulgaria</option>
+                    <option>Burkina</option>
+                    <option>Burundi</option>
+                    <option>Cambodia</option>
+                    <option>Cameroon</option>
+                    <option>Canada</option>
+                    <option>Cape Verde</option>
+                    <option>Central African Rep</option>
+                    <option>Chad</option>
+                    <option>Chile</option>
+                    <option>China</option>
+                    <option>Colombia</option>
+                    <option>Comoros</option>
+                    <option>Costa Rica</option>
+                    <option>Croatia</option>
+                    <option>Cyprus</option>
+                    <option>Czech Republic</option>
+                    <option>Denmark</option>
+                    <option>Djibouti</option>
+                    <option>Dominica</option>
+                    <option>Dominican Republic</option>
+                    <option>East Timor</option>
+                    <option>Ecuador</option>
+                    <option>Egypt</option>
+                    <option>El Salvador</option>
+                    <option>Equatorial Guinea</option>
+                    <option>Eritrea</option>
+                    <option>Estonia</option>
+                    <option>Ethiopia</option>
+                    <option>Fiji</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    <option>Gabon</option>
+                    <option>Gambia</option>
+                    <option>Georgia</option>
+                    <option>Germany</option>
+                    <option>Ghana</option>
+                    <option>Greece</option>
+                    <option>Grenada</option>
+                    <option>Guatemala</option>
+                    <option>Guinea</option>
+                    <option>Guinea-Bissau</option>
+                    <option>Guyana</option>
+                    <option>Haiti</option>
+                    <option>Honduras</option>
+                    <option>Hungary</option>
+                    <option>Iceland</option>
+                    <option>India</option>
+                    <option>Ireland (Republic)</option>
+                    <option>Israel</option>
+                    <option>Ivory Coast</option>
+                    <option>Italy</option>
+                    <option>Jamaica</option>
+                    <option>Japan</option>
+                    <option>Jordan</option>
+                    <option>Kazakhstan</option>
+                    <option>Kenya</option>
+                    <option>Kiribati</option>
+                    <option>Korea South</option>
+                    <option>Kosovo</option>
+                    <option>Kuwait</option>
+                    <option>Kyrgyzstan</option>
+                    <option>Laos</option>
+                    <option>Latvia</option>
+                    <option>Lebanon</option>
+                    <option>Lesotho</option>
+                    <option>Liberia</option>
+                    <option>Libya</option>
+                    <option>Liechtenstein</option>
+                    <option>Lithuania</option>
+                    <option>Luxembourg</option>
+                    <option>Macedonia</option>
+                    <option>Madagascar</option>
+                    <option>Malawi</option>
+                    <option>Malaysia</option>
+                    <option>Maldives</option>
+                    <option>Mali</option>
+                    <option>Malta</option>
+                    <option>Marshall Islands</option>
+                    <option>Mauritania</option>
+                    <option>Mauritius</option>
+                    <option>Mexico</option>
+                    <option>Micronesia</option>
+                    <option>Moldova</option>
+                    <option>Monaco</option>
+                    <option>Mongolia</option>
+                    <option>Montenegro</option>
+                    <option>Morocco</option>
+                    <option>Mozambique</option>
+                    <option>Namibia</option>
+                    <option>Nauru</option>
+                    <option>Nepal</option>
+                    <option>Netherlands</option>
+                    <option>New Zealand</option>
+                    <option>Nicaragua</option>
+                    <option>Niger</option>
+                    <option>Nigeria</option>
+                    <option>Norway</option>
+                    <option>Oman</option>
+                    <option>Pakistan</option>
+                    <option>Palau</option>
+                    <option>Panama</option>
+                    <option>Papua New Guinea</option>
+                    <option>Paraguay</option>
+                    <option>Peru</option>
+                    <option>Phillipines</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Qatar</option>
+                    <option>Romania</option>
+                    <option>Russian Federation</option>
+                    <option>Rwanda</option>
+                    <option>St Kitts &amp; Nevis</option>
+                    <option>St Lucia</option>
+                    <option>Saint Vincent & the Grenadines</option>
+                    <option>Samoa</option>
+                    <option>San Marino</option>
+                    <option>Sao Tome & Principe</option>
+                    <option>Saudi Arabia</option>
+                    <option>Senegal</option>
+                    <option>Serbia</option>
+                    <option>Seychelles</option>
+                    <option>Sierra Leone</option>
+                    <option>Singapore</option>
+                    <option>Slovakia</option>
+                    <option>Slovenia</option>
+                    <option>Solomon Islands</option>
+                    <option>Somalia</option>
+                    <option>South Africa</option>
+                    <option>South Sudan</option>
+                    <option>Spain</option>
+                    <option>Sri Lanka</option>
+                    <option>Sudan</option>
+                    <option>Suriname</option>
+                    <option>Swaziland</option>
+                    <option>Sweden</option>
+                    <option>Switzerland</option>
+                    <option>Taiwan</option>
+                    <option>Tajikistan</option>
+                    <option>Tanzania</option>
+                    <option>Thailand</option>
+                    <option>Togo</option>
+                    <option>Tonga</option>
+                    <option>Trinidad & Tobago</option>
+                    <option>Tunisia</option>
+                    <option>Turkey</option>
+                    <option>Turkmenistan</option>
+                    <option>Tuvalu</option>
+                    <option>Uganda</option>
+                    <option>Ukraine</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Uruguay</option>
+                    <option>Uzbekistan</option>
+                    <option>Vanuatu</option>
+                    <option>Vatican City</option>
+                    <option>Venezuela</option>
+                    <option>Vietnam</option>
+                    <option>Yemen</option>
+                    <option>Zambia</option>
+                    <option>Zimbabwe</option>
+                  </datalist>
+                </td>
+                <td>
+                  <label for="residence"
+                    >State/City of Residence<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    name="residence"
+                    placeholder="Enter your state of residence"
+                    required
+                    class="input"
+                    id="residence"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="employment"
+                    >Employment Status<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    list="employment-status"
+                    name="employment-status"
+                    placeholder="Select employment status"
+                    required
+                    class="input"
+                    id="employment"
+                  />
+                  <datalist id="employment-status">
+                    <option>employed</option>
+                    <option>unemployed</option>
+                    <option>self-employed</option>
+                  </datalist>
+                </td>
+                <td>
+                  <label for="phone-number">Phone Number<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    placeholder="08154387000"
+                    required
+                    class="input"
+                    id="phone-number"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="school">Choose School<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    list="choose-school"
+                    name="school"
+                    placeholder="Select school"
+                    required
+                    class="input"
+                    id="school"
+                  />
+                  <datalist id="choose-school">
+                    <option>School of Engineering</option>
+                    <option>School of Product</option>
+                    <option>School of Data</option>
+                    <option>School of Creative Economy</option>
+                    <option>School of Business</option>
+                  </datalist>
+                </td>
+                <td>
+                  <label for="course">Choose Course of Study<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    list="course-of-study"
+                    name="course-of-study"
+                    placeholder="Select course"
+                    required
+                    class="input"
+                    id="course"
+                  />
+                  <datalist id="course-of-study">
+                    <option>Frontend Engineering</option>
+                    <option>Backend Engineering</option>
+                    <option>Cloud Engineering</option>
+                  </datalist>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="hear-about-us"
+                    >How did you hear about us?<sup>*</sup></label
+                  ><br />
+                  <input
+                    type="text"
+                    list="hear-about-us"
+                    name="hear-about-us"
+                    placeholder="Select channel"
+                    required
+                    class="input"
+                    id="hear-about-us"
+                  />
+                  <datalist id="hear-about-us">
+                    <option>Twitter</option>
+                    <option>Facebook</option>
+                    <option>Linkedin</option>
+                    <option>Youtube</option>
+                    <option>Friend</option>
+                    <option>WhatsApp</option>
+                    <option>Instagram</option>
+                    <option>Bill Board</option>
+                    <option>Other</option>
+                  </datalist>
+                </td>
+                <td>
+                  <label for="discount/scholarship"
+                    >Scholarship/Discount Code (optional)</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="discount/scholarship"
+                    placeholder="Scholarship or student ID or discount"
+                    class="input"
+                    id="discount/scholarship"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+        <p>
+          By clicking continure I agree to
+          <a href="https://altschoolafrica.com/terms" target="_blank"
+            >Terms of Use</a>
+          and acknowledge that I have read the
+          <a href="https://altschoolafrica.com/policy" target="_blank"
+            >Privacy Policy.</a>
+        </p>
+
+        <button type="submit">Proceed</button>
+
+        <p style="font-size: 14px;">Already have an account? <a href="https://portal.altschoolafrica.com/" target="_self">Sign In</a></p>
+      </section>
+    </main>
+
+    <footer>
+        <p>Want to go back to the main page? Use the below link; <br>
+            <a href="./index.html">Laura's page</a>
+        </p>
+    </footer>
+  </body>
+</html>
